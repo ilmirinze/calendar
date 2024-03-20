@@ -45,17 +45,6 @@ const daysOfWeek = {
     en: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
 };
 
-const switchLanguage = (lang) => {
-    language.value = lang;
-};
-
-const currentMonth = computed(() => {
-    return currentDate.value.toLocaleString('default', { month: 'long', year: 'numeric' });
-});
-
-const daysOfWeekRu = ['Пн', 'Вт', 'Ср', 'Чи', 'Пт', 'Сб', 'Вс'];
-const daysOfWeekEn = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
-
 const daysInMonth = computed(() => {
     const year = currentDate.value.getFullYear();
     const month = currentDate.value.getMonth();
